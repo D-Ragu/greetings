@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #ffffff, #f0f0f0);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .header img {
+            max-width: 150px;
+        }
+
+        .content {
+            text-align: left;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .content h2 {
+            color: #007bff;
+            font-size: 24px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            text-shadow: 1px 1px 5px rgba(0, 123, 255, 0.3);
+        }
+
+        .content p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button a {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: #ffffff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 18px;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+            transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .button a:hover {
+            background: linear-gradient(135deg, #0056b3, #003f7f);
+            transform: translateY(-3px) rotate(-2deg);
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.6);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777777;
+        }
+
+        /* Mobile Styles */
+        @media only screen and (max-width: 480px) {
+            .container {
+                padding: 15px;
+                border-radius: 8px;
+            }
+
+            .content h2 {
+                font-size: 20px;
+                padding-bottom: 8px;
+            }
+
+            .content p {
+                font-size: 14px;
+            }
+
+            .button a {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+
+            .header img {
+                max-width: 120px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <p>Dear Mr. Rye,</p>
+            <p>I hope this email finds you well. My name is Dylan Raguseo, and I was referred to you by Keith Meade. 
+                He spoke highly of you and recommended that I reach out to explore potential employment opportunities within your organization.</p>
+            <p>I have attached my resume for your review and would welcome the opportunity to discuss how my skills and experience align with your needs.</p>
+            
+            <!-- Email as HTML compatible buttons -->
+            <div style="text-align: center; margin-top: 20px;">
+                <table border="0" cellspacing="10" cellpadding="3">
+                    <tc>
+                        <td style="border-radius: 30px;" bgcolor="#007bff">
+                            <a href="https://drive.google.com/file/d/1PtabBfg0BBMtCNqaA5S-PNcB2HbtmxIm/view?usp=sharing" 
+                               target="_blank" 
+                               style="font-size: 18px; 
+                                      font-family: Arial, sans-serif; 
+                                      color: #ffffff; 
+                                      text-decoration: none; 
+                                      padding: 12px 25px; 
+                                      display: inline-block;">
+                                Resume
+                            </a>
+                        </td>
+                    </tc>
+                    <tc>
+                        <td style="border-radius: 30px;" bgcolor="#007bff">
+                            <a href="https://www.linkedin.com/in/dylan-raguseo/" 
+                               target="_blank" 
+                               style="font-size: 18px; 
+                                      font-family: Arial, sans-serif; 
+                                      color: #ffffff; 
+                                      text-decoration: none; 
+                                      padding: 12px 25px; 
+                                      display: inline-block;">
+                                LinkedIn
+                            </a>
+                        </td>
+                    </tc>
+                    <tc>
+                        <td style="border-radius: 30px;" bgcolor="#007bff">
+                            <a href="mailto:dylan.raguseo@gmail.com" 
+                               style="font-size: 18px; 
+                                      font-family: Arial, sans-serif; 
+                                      color: #ffffff; 
+                                      text-decoration: none; 
+                                      padding: 12px 25px; 
+                                      display: inline-block;">
+                                Email Me
+                            </a>
+                        </td>
+                    </tc>
+                </table>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <p>Thank you for your time and consideration.</p>
+            <p>Best regards,<br>Dylan Raguseo
+        </div>
+    </div>
+</body>
+</html>
